@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {"Extended_EventHandlers"};
-		author[] = {"The hero a3g deserves"};
+		author[] = {"Cephei"};
 		version = "2.0";
 	};
 };
