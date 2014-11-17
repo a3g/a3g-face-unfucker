@@ -32,7 +32,6 @@ A3G_Face_Unfucker_fnc_checkList = {
 // Function to apply or reapply all faces on the client. This function is called by the server, via timer or manually via keybinding.
 A3G_Face_Unfucker_fnc_unfuck = {
 	{
-		hint "manually";
 		_removeFace = true;
 		if([] call A3G_Face_Unfucker_fnc_blacklistEnabled) then {
 			// This is a blacklist, so all faces are fine unless they're on the blackList.
