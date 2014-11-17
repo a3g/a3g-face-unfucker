@@ -15,16 +15,17 @@ A3G_Face_Unfucker_fnc_getAddonUsers = {
 
 // JIP & Join event
 A3G_Face_Unfucker_fnc_joinEvent = {
+	sleep 3;	// To give clients time to fully load into the game.
 	[true] call A3G_Face_Unfucker_fnc_faceCheck;
 	_addonUsers = [] call A3G_Face_Unfucker_fnc_getAddonUsers;
-	[{
+	[{		
 		[] call A3G_Face_Unfucker_fnc_unfuck;
 	}, "BIS_fnc_spawn", _addonUsers, false] call BIS_fnc_MP;	// This is sent only to clients that have the addon.
 };	
 
 ["A3G_Face_Unfucker_eventID", "onPlayerConnected", {
-	[] call A3G_Face_Unfucker_fnc_joinEvent;
+	[] spawn A3G_Face_Unfucker_fnc_joinEvent;
 }] call BIS_fnc_addStackedEventHandler;
 
 // The event above doesn't fire in the editor.
-[] call A3G_Face_Unfucker_fnc_joinEvent;
+[] spawn A3G_Face_Unfucker_fnc_joinEvent;

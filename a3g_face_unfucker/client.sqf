@@ -52,6 +52,7 @@ A3G_Face_Unfucker_fnc_unfuck = {
 	} forEach ( playableUnits + switchableUnits );
 };
 
+sleep 3;
 // Periodically check if the server could be reached by now
 if ( isNil "A3G_Face_Unfucker_serverRunning" ) then {
 	systemChat "A3G Face Unfucker: Server appears to not run the mod. Running local instance instead. Faces will not be synchronized across the network.";
