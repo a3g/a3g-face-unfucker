@@ -2,7 +2,7 @@ class CfgPatches {
 	class A3G_FaceUnfucker {
 		units[] = {};
 		weapons[] = {};
-		requiredAddons[] = {"Extended_Eventhandlers"};
+		requiredAddons[] = {"cba_keybinding"};
 		author[] = {"Cephei"};
 		version = "3.0";
 	};
