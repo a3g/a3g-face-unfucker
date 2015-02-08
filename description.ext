@@ -1,0 +1,10 @@
+class CfgFunctions {
+	#include "a3g-face-unfucker\cfgFunctions.hpp"
+};
+
+class CfgRemoteExecCommands {
+	class sideChat {};
+};
+
+enableDebugConsole = 1;
+respawn = 3;
