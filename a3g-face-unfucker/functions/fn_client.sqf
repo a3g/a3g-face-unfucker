@@ -7,7 +7,7 @@ player setVariable["A3G_FaceUnfucker_UsingAddon", true, true];
 	{
 		[_x] call A3G_FaceUnfucker_fnc_Unfuck;
 	} forEach ( playableUnits + switchableUnits );
-}, [DIK_T, [true, true, false]]] call CBA_fnc_registerKeybind;
+}, [DIK_O, [true, true, false]]] call CBA_fnc_registerKeybind;
 
 if ( isNil "A3G_FaceUnfucker_ServerRunning" ) then {
 	[] spawn A3G_FaceUnfucker_fnc_LocalInstance;
