@@ -4,5 +4,5 @@ publicVariable "A3G_FaceUnfucker_ServerRunning";
 
 // Make a join event
 ["A3G_FaceUnfucker_EventID", "onPlayerConnected", {
-	[_uid] call A3G_FaceUnfucker_fnc_JoinEH;
+  [_uid] call A3G_FaceUnfucker_fnc_JoinEH;
 }] call bis_fnc_addStackedEventHandler;
