@@ -1,3 +1,5 @@
+private ["_player", "_removeFace"];
+
 _player = _this select 0;
 
 _removeFace = true;

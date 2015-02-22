@@ -1,3 +1,5 @@
+private ["_player", "_addonUsers"];
+
 _player = if ( count _this > 0 ) then { objectFromNetId ( _this select 0 )} else { player };
 
 [_player, true] call A3G_FaceUnfucker_fnc_CheckFace;

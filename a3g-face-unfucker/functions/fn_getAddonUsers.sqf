@@ -1,3 +1,5 @@
+private ["_addonUsers"];
+
 // Function to find all units who run the addon.
 _addonUsers = [];
 {

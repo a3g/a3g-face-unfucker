@@ -1,3 +1,5 @@
+private ["_player", "_global"];
+
 _player = _this select 0;
 _global = _this select 1;
 

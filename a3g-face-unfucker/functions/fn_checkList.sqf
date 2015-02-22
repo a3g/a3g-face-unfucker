@@ -1,3 +1,5 @@
+private ["_unit", "_list", "_listConfig", "_listed"];
+
 _unit = _this select 0;
 _list = _this select 1;
 
