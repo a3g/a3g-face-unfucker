@@ -4,16 +4,16 @@ class CfgPatches {
     weapons[] = {};
     requiredAddons[] = {"cba_keybinding"};
     author[] = {"Cephei"};
-    version = "3.0";
+    version = "3.0a";
   };
 };
 
 class CfgFunctions {
-  #include "a3g-face-unfucker\cfgFunctions.hpp"
+  #include "cfgFunctions.hpp"
 };
 
 class A3G {
   class A3G_FaceUnfucker {
-    #include "userconfig\a3g-face-unfucker\config.hpp"
+    #include "\userconfig\a3g-face-unfucker\config.hpp"
   };
 };
